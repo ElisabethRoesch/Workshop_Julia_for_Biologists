@@ -12,7 +12,7 @@ ErkModel = @reaction_network begin
     h₄,        Mp_MKP   --> M + MKP
 end k₁ k₂ k₃ k₄ h₁ h₂ h₃ h₄ k₋₁ k₋₃ h₋₁ h₋₃
 
-# Create Graph (if graphviz installed)
+# Create Graph 
 Graph(ErkModel)
 
 # Default parameter values
