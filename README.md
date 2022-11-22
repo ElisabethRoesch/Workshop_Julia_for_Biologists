@@ -10,6 +10,8 @@ Some additional recommended resources are:
 * [Julia for Biologists](https://github.com/ElisabethRoesch/Perspective_Julia_for_Biologists) - A diverse collection of Julia code examples for biologists.
 * [Statistics with Julia](https://statisticswithjulia.org/) - An elementary statistics book with over 200 stand alone Julia examples.
 * [Programming of Simulation, Analysis, and Learning Systems](https://courses.smp.uq.edu.au/MATH2504/2022/) - A programming course for mathematicians using Julia. Online videos and online content. 
-* [The Julia Express](https://github.com/bkamins/The-Julia-Express) - Very dense summary
+* [The Julia Express](https://github.com/bkamins/The-Julia-Express) - A very dense Julia summary.
 * [Introduction to Julia | Jose Storopoli | JuliaCon 2022](https://www.youtube.com/watch?v=uiQpwMQZBTA) - Useful 3 hour video - starts with a good overview of the package manager.
 * [Statistics with Julia from the ground up | Workshop | JuliaCon 2021](https://www.youtube.com/watch?v=IlPoU5Yr2QI) - A 3 hour workshop of Julia basics in the context of statistics.
+
+There are many more great resources out there and most importantly the [Julia Documentation](https://docs.julialang.org/en/v1/) is very clear.
