@@ -1,3 +1,6 @@
+using Pkg
+Pkg.activate(".")
+
 using Catalyst, DifferentialEquations, Plots 
 
 # Initial Catalyst model 
