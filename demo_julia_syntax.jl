@@ -23,19 +23,19 @@ p = [:k₁ => 0.00166, :k₂ => 0.0001, :k₃ => 0.1,:k₄ => 0.00166,
 			:h₁ => 0.02, :h₂ => 0.001,  :h₃ => 0.02,  :h₄ => 0.02, 			
 			:k₋₁ => 0.0001, :k₋₃ => 0.1,  :h₋₁ => 0.02, :h₋₃ => 0.02]
 
-# Inital conditions for states            
+# Initial conditions for states            
 u0 = [:M => 201, :MKK => 100, :M_MKK => 10, :Mp_MKK => 20, :MKP => 2, 
 		:Mpp => 23, :Mp => 10, :Mpp_MKP => 10, :Mp_MKP => 10]
 
 # Simulation time
 tspan = (0.0, 4.0)
 
-# ODEProblem convertion 
+# ODEProblem conversion 
 ode_prob = ODEProblem(ErkModel, u0, tspan, p)
 sol  = solve(ode_prob)
 p1 = plot(sol, legend = :outerright, grid = "off")
 
-# SDEProblem convertion 
+# SDEProblem conversion 
 sde_prob = SDEProblem(ErkModel, u0, tspan, p)
 sol2  = solve(sde_prob,  LambaEM(), tstops = range(0.0, step = 4e-3, length = 1001))
 p2 = plot(sol2, legend = :outerright, grid = "off")
